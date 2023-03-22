@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139DCEFB29CB87C0000BD911 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DCEFA29CB87C0000BD911 /* UIColor+Extensions.swift */; };
+		139DCEFD29CB9087000BD911 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DCEFC29CB9087000BD911 /* UIImageView+Extensions.swift */; };
+		139DCEFF29CB956B000BD911 /* PollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DCEFE29CB956B000BD911 /* PollViewController.swift */; };
 		13CD848F29CB3F1900D16A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD848E29CB3F1900D16A9A /* AppDelegate.swift */; };
 		13CD849129CB3F1900D16A9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD849029CB3F1900D16A9A /* SceneDelegate.swift */; };
-		13CD849329CB3F1900D16A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD849229CB3F1900D16A9A /* ViewController.swift */; };
-		13CD849629CB3F1900D16A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849429CB3F1900D16A9A /* Main.storyboard */; };
+		13CD849329CB3F1900D16A9A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD849229CB3F1900D16A9A /* ChatViewController.swift */; };
+		13CD849629CB3F1900D16A9A /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849429CB3F1900D16A9A /* Chat.storyboard */; };
 		13CD849829CB3F1A00D16A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849729CB3F1A00D16A9A /* Assets.xcassets */; };
 		13CD849B29CB3F1A00D16A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849929CB3F1A00D16A9A /* LaunchScreen.storyboard */; };
 		13CD84A629CB3F1A00D16A9A /* LowkeyPollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84A529CB3F1A00D16A9A /* LowkeyPollTests.swift */; };
 		13CD84B029CB3F1A00D16A9A /* LowkeyPollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84AF29CB3F1A00D16A9A /* LowkeyPollUITests.swift */; };
 		13CD84B229CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84B129CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift */; };
+		13CD84C229CB3FDB00D16A9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84C129CB3FDB00D16A9A /* Message.swift */; };
+		13CD84C729CB436000D16A9A /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84C629CB436000D16A9A /* DummyData.swift */; };
+		13CD84CC29CB47B200D16A9A /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84CB29CB47B200D16A9A /* ChatViewModel.swift */; };
+		13CD84D129CB489F00D16A9A /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CD84CF29CB489F00D16A9A /* MessageTableViewCell.xib */; };
+		13CD84D329CB4C8500D16A9A /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84D229CB4C8500D16A9A /* MessageTableViewCell.swift */; };
+		13CD84D629CB4ECC00D16A9A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84D529CB4ECC00D16A9A /* Array+Extensions.swift */; };
+		13E2522029CB584000B70888 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2521F29CB584000B70888 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139DCEFA29CB87C0000BD911 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		139DCEFC29CB9087000BD911 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		139DCEFE29CB956B000BD911 /* PollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollViewController.swift; sourceTree = "<group>"; };
 		13CD848B29CB3F1900D16A9A /* LowkeyPoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LowkeyPoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD848E29CB3F1900D16A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CD849029CB3F1900D16A9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13CD849229CB3F1900D16A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		13CD849529CB3F1900D16A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13CD849229CB3F1900D16A9A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		13CD849529CB3F1900D16A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
 		13CD849729CB3F1A00D16A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CD849A29CB3F1A00D16A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CD849C29CB3F1A00D16A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +62,13 @@
 		13CD84AB29CB3F1A00D16A9A /* LowkeyPollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LowkeyPollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD84AF29CB3F1A00D16A9A /* LowkeyPollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowkeyPollUITests.swift; sourceTree = "<group>"; };
 		13CD84B129CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowkeyPollUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		13CD84C129CB3FDB00D16A9A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		13CD84C629CB436000D16A9A /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		13CD84CB29CB47B200D16A9A /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		13CD84CF29CB489F00D16A9A /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		13CD84D229CB4C8500D16A9A /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		13CD84D529CB4ECC00D16A9A /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		13E2521F29CB584000B70888 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139DCEF729CB7BA3000BD911 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		139DCF0029CB956C000BD911 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				139DCEFE29CB956B000BD911 /* PollViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		13CD848229CB3F1900D16A9A = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +134,14 @@
 		13CD848D29CB3F1900D16A9A /* LowkeyPoll */ = {
 			isa = PBXGroup;
 			children = (
-				13CD848E29CB3F1900D16A9A /* AppDelegate.swift */,
-				13CD849029CB3F1900D16A9A /* SceneDelegate.swift */,
-				13CD849229CB3F1900D16A9A /* ViewController.swift */,
-				13CD849429CB3F1900D16A9A /* Main.storyboard */,
+				13CD84C829CB43E900D16A9A /* Delegate */,
+				13CD84C529CB435800D16A9A /* Models */,
+				13CD84BF29CB3F3F00D16A9A /* Chat */,
+				13CD84C029CB3F4300D16A9A /* Poll */,
+				139DCEF729CB7BA3000BD911 /* Helpers */,
+				13CD84D429CB4EB700D16A9A /* Extensions */,
+				13CD84C929CB440200D16A9A /* LaunchScreen */,
 				13CD849729CB3F1A00D16A9A /* Assets.xcassets */,
-				13CD849929CB3F1A00D16A9A /* LaunchScreen.storyboard */,
 				13CD849C29CB3F1A00D16A9A /* Info.plist */,
 			);
 			path = LowkeyPoll;
@@ -125,6 +162,103 @@
 				13CD84B129CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift */,
 			);
 			path = LowkeyPollUITests;
+			sourceTree = "<group>";
+		};
+		13CD84BE29CB3F3500D16A9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84C129CB3FDB00D16A9A /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13CD84BF29CB3F3F00D16A9A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84BE29CB3F3500D16A9A /* Models */,
+				13CD84C329CB418000D16A9A /* Views */,
+				13CD84CA29CB47A000D16A9A /* ViewModels */,
+				13CD84C429CB42CB00D16A9A /* Storyboards */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		13CD84C029CB3F4300D16A9A /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				139DCF0029CB956C000BD911 /* Views */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		13CD84C329CB418000D16A9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84CD29CB487B00D16A9A /* MessageTableViewCell */,
+				13CD849229CB3F1900D16A9A /* ChatViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13CD84C429CB42CB00D16A9A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				13CD849429CB3F1900D16A9A /* Chat.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		13CD84C529CB435800D16A9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84C629CB436000D16A9A /* DummyData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13CD84C829CB43E900D16A9A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				13CD848E29CB3F1900D16A9A /* AppDelegate.swift */,
+				13CD849029CB3F1900D16A9A /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		13CD84C929CB440200D16A9A /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				13CD849929CB3F1A00D16A9A /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		13CD84CA29CB47A000D16A9A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84CB29CB47B200D16A9A /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		13CD84CD29CB487B00D16A9A /* MessageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84CF29CB489F00D16A9A /* MessageTableViewCell.xib */,
+				13CD84D229CB4C8500D16A9A /* MessageTableViewCell.swift */,
+			);
+			path = MessageTableViewCell;
+			sourceTree = "<group>";
+		};
+		13CD84D429CB4EB700D16A9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13CD84D529CB4ECC00D16A9A /* Array+Extensions.swift */,
+				13E2521F29CB584000B70888 /* UILabel+Extensions.swift */,
+				139DCEFA29CB87C0000BD911 /* UIColor+Extensions.swift */,
+				139DCEFC29CB9087000BD911 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CD849B29CB3F1A00D16A9A /* LaunchScreen.storyboard in Resources */,
+				13CD84D129CB489F00D16A9A /* MessageTableViewCell.xib in Resources */,
 				13CD849829CB3F1A00D16A9A /* Assets.xcassets in Resources */,
-				13CD849629CB3F1900D16A9A /* Main.storyboard in Resources */,
+				13CD849629CB3F1900D16A9A /* Chat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CD849329CB3F1900D16A9A /* ViewController.swift in Sources */,
+				13CD84D329CB4C8500D16A9A /* MessageTableViewCell.swift in Sources */,
+				139DCEFF29CB956B000BD911 /* PollViewController.swift in Sources */,
+				139DCEFB29CB87C0000BD911 /* UIColor+Extensions.swift in Sources */,
+				139DCEFD29CB9087000BD911 /* UIImageView+Extensions.swift in Sources */,
+				13CD849329CB3F1900D16A9A /* ChatViewController.swift in Sources */,
+				13CD84C229CB3FDB00D16A9A /* Message.swift in Sources */,
+				13E2522029CB584000B70888 /* UILabel+Extensions.swift in Sources */,
 				13CD848F29CB3F1900D16A9A /* AppDelegate.swift in Sources */,
+				13CD84C729CB436000D16A9A /* DummyData.swift in Sources */,
+				13CD84CC29CB47B200D16A9A /* ChatViewModel.swift in Sources */,
 				13CD849129CB3F1900D16A9A /* SceneDelegate.swift in Sources */,
+				13CD84D629CB4ECC00D16A9A /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +441,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13CD849429CB3F1900D16A9A /* Main.storyboard */ = {
+		13CD849429CB3F1900D16A9A /* Chat.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				13CD849529CB3F1900D16A9A /* Base */,
 			);
-			name = Main.storyboard;
+			name = Chat.storyboard;
 			sourceTree = "<group>";
 		};
 		13CD849929CB3F1A00D16A9A /* LaunchScreen.storyboard */ = {
@@ -442,9 +586,10 @@
 				INFOPLIST_FILE = LowkeyPoll/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Chat;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +615,10 @@
 				INFOPLIST_FILE = LowkeyPoll/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Chat;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
