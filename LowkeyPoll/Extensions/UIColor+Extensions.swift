@@ -11,5 +11,6 @@ extension UIColor {
     static let dark: UIColor? = .init(named: "Dark")
     static let darkShade: UIColor? = .init(named: "DarkShade")
     static let secondary: UIColor? = .init(named: "Secondary")
+    static let darkBlue: UIColor? = .init(named: "DarkBlue")
 }
 

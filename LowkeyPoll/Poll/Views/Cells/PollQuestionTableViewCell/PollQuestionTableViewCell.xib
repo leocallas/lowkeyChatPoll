@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PollQuestionTableViewCell" rowHeight="97" id="KGk-i7-Jjw" customClass="PollQuestionTableViewCell" customModule="LowkeyPoll" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8qN-sJ-X4J">
+                        <rect key="frame" x="16" y="13" width="288" height="15"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUD-X6-Sc9">
+                                <rect key="frame" x="0.0" y="0.0" width="144" height="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" name="Secondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I78-ct-LqV">
+                                <rect key="frame" x="144" y="0.0" width="144" height="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" name="Secondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Oei-E2-V3c"/>
+                        </constraints>
+                    </stackView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVV-k4-SZj">
+                        <rect key="frame" x="16" y="40" width="288" height="41"/>
+                        <color key="backgroundColor" name="DarkShade3"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Text">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="17" name="Helvetica-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+                <color key="backgroundColor" name="Dark"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8qN-sJ-X4J" secondAttribute="trailing" constant="16" id="LYp-re-eOY"/>
+                    <constraint firstAttribute="trailing" secondItem="NVV-k4-SZj" secondAttribute="trailing" constant="16" id="V2I-fp-sj4"/>
+                    <constraint firstItem="8qN-sJ-X4J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="VYj-hf-ojg"/>
+                    <constraint firstAttribute="bottom" secondItem="NVV-k4-SZj" secondAttribute="bottom" constant="16" id="foZ-Do-tZ9"/>
+                    <constraint firstItem="NVV-k4-SZj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gZh-N1-Cg1"/>
+                    <constraint firstItem="8qN-sJ-X4J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="h8l-KK-bPX"/>
+                    <constraint firstItem="NVV-k4-SZj" firstAttribute="top" secondItem="8qN-sJ-X4J" secondAttribute="bottom" constant="12" id="xBp-KE-4pb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textLimitCountLabel" destination="I78-ct-LqV" id="EVc-4W-ZJh"/>
+                <outlet property="textView" destination="NVV-k4-SZj" id="iHN-MI-yBm"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="36.971830985915496"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Dark">
+            <color red="0.078000001609325409" green="0.075000002980232239" blue="0.10599999874830246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkShade3">
+            <color red="0.10300000011920929" green="0.096000000834465027" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.49411764705882355" green="0.47843137254901963" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

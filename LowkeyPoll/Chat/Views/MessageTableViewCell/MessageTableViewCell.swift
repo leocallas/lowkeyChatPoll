@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MessageTableViewCell: UITableViewCell {
+final class MessageTableViewCell: UITableViewCell, NameDescribable {
     
     // MARK: - IBOutlets
 
@@ -19,18 +19,17 @@ final class MessageTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        authorImageView.layer.cornerRadius = 17
     }
 
     // MARK: - Methods
 
-    func configure(with message: Message) {
-        self.authorFullNameLabel.text = message.author
+    func configure(with message: Message<String>) {
+        self.authorFullNameLabel.text = message.author.fullName
 
-        self.messageLabel.text = message.message
+        self.messageLabel.text = message.content
         messageLabel.detectMentions()
         
-        self.authorImageView.image = message.authorImage
+        self.authorImageView.image = message.author.avatar
     }
     
 }

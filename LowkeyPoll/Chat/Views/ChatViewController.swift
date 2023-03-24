@@ -30,6 +30,12 @@ final class ChatViewController: UIViewController {
         viewModel.loadMessages()
     }
 
+    // MARK: - IBActions
+
+    @IBAction private func menuButtonTapped(_ sender: UIButton) {
+        presentPollViewController()
+    }
+
     @IBAction private func sendMessageButtonTapped(_ sender: UIButton) {
         sendMessage()
     }
@@ -43,7 +49,8 @@ final class ChatViewController: UIViewController {
     private func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(.init(nibName: CellIdentifiers.messageCell, bundle: nil), forCellReuseIdentifier: CellIdentifiers.messageCell)
+        tableView.register(.init(nibName: MessageTableViewCell.typeName, bundle: nil), forCellReuseIdentifier: MessageTableViewCell.typeName)
+        tableView.register(.init(nibName: PollMessageTableViewCell.typeName, bundle: nil), forCellReuseIdentifier: PollMessageTableViewCell.typeName)
         tableView.contentInset = UIEdgeInsets(top: 20, left: .zero, bottom: .zero, right: .zero)
     }
 
@@ -53,11 +60,20 @@ final class ChatViewController: UIViewController {
     }
 
     private func sendMessage() {
-        guard let message = messageTextField.text else { return }
-        viewModel.sendMessage(message)
+        guard let message = messageTextField.text, !message.isEmpty else { return }
+        viewModel.sendTextMessage(message)
         messageTextField.text = nil
         
-        // Animated adding message
+        updateTableView()
+    }
+
+    private func presentPollViewController() {
+        if let pollViewController = UIStoryboard().instantiatePollViewController(delegate: self) {
+            self.present(pollViewController, animated: true)
+        }
+    }
+
+    private func updateTableView() {
         let indexPath = IndexPath(row: viewModel.messages.count - 1, section: .zero)
         tableView.insertRows(at: [indexPath], with: .fade)
         tableView.scrollToRow(at: indexPath, at: .none, animated: true)
@@ -72,11 +88,24 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.messageCell, for: indexPath) as? MessageTableViewCell else { return .init() }
-        if let message = viewModel.messages.item(at: indexPath.row) {
-            cell.configure(with: message)
+        if let content = viewModel.messages.item(at: indexPath.row) {
+            switch content.type {
+            case .text:
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: MessageTableViewCell.typeName, for: indexPath) as? MessageTableViewCell else { return .init() }
+                if let content = content as? Message<String> {
+                    cell.configure(with: content)
+                }
+                return cell
+            case .poll:
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: PollMessageTableViewCell.typeName, for: indexPath) as? PollMessageTableViewCell else { return .init() }
+                if let content = content as? Message<ChatPoll> {
+                    cell.configure(with: content)
+                }
+                return cell
+            }
         }
-        return cell
+        
+        return .init()
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -96,6 +125,15 @@ extension ChatViewController: UITextFieldDelegate {
 
     @objc private func textFieldDidChange(_ textField: UITextField) {
         sendMessageButton.setImage((textField.text?.isEmpty ?? false) ? UIImage(named: "camera") : UIImage(named: "send"), animated: true)
+    }
+}
+
+// MARK: - PollViewDelegate
+
+extension ChatViewController: PollViewDelegate {
+    func createPoll(with poll: ChatPoll) {
+        viewModel.sendPoll(poll)
+        updateTableView()
     }
 }
 
@@ -130,10 +168,3 @@ extension ChatViewController {
         }
     }
 }
-
-extension ChatViewController {
-    struct CellIdentifiers {
-        static let messageCell = "MessageTableViewCell"
-    }
-}
-

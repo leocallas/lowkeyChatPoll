@@ -8,16 +8,16 @@
 import Foundation
 
 protocol ChatViewModelProtocol {
-    var messages: [Message] { get }
     func loadMessages()
-    func sendMessage(_ message: String)
+    func sendTextMessage(_ message: String)
+    func sendPoll(_ poll: ChatPoll)
 }
 
 final class ChatViewModel: ChatViewModelProtocol {
 
     // MARK: - Public Properties
 
-    private(set) var messages: [Message] = []
+    private(set) var messages: [any MessageContent] = []
 
     // MARK: - Private Properties
 
@@ -29,7 +29,11 @@ final class ChatViewModel: ChatViewModelProtocol {
         messages = dummyData.messages
     }
 
-    func sendMessage(_ message: String) {
-        messages.append(.init(author: "Levan Koberidze", authorImage: .init(named: "currentUserImage"), message: message))
+    func sendTextMessage(_ message: String) {
+        messages.append(Message(type: .text, author: .current, content: message))
+    }
+
+    func sendPoll(_ poll: ChatPoll) {
+        messages.append(Message(type: .poll, author: .current, content: poll))
     }
 }
