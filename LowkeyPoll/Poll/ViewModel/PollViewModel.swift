@@ -8,19 +8,18 @@
 import Foundation
 
 protocol PollViewModelProtocol {
-    var dataSource: [PollTableDataSourceItem] { get }
+    var dataSource: [PollTableDataSourceItem] { get set }
+    var options: [Option] { get set }
 
-    var delegate: PollViewDelegate? { get }
-    var viewModelDelegate: PollViewModelDelegate? { get }
+    var question: String { get }
 
     func item(at section: Int) -> PollTableDataSourceItem?
     func numberOfSections() -> Int
     func numberOfRows(in section: Int) -> Int
 
+    func setOptionText(_ text: String, at index: Int)
     func addOption(at indexPath: IndexPath)
     func removeOption(at index: Int)
-    func toggleAnonymous(_ value: Bool)
-    func createPoll()
 }
 
 protocol PollViewModelDelegate: AnyObject {

@@ -34,13 +34,14 @@
 		139DCF2929CC59D6000BD911 /* PollOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139DCF2729CC59D6000BD911 /* PollOptionTableViewCell.xib */; };
 		139DCF2E29CC59FC000BD911 /* PollSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139DCF2C29CC59FC000BD911 /* PollSwitchTableViewCell.xib */; };
 		13C0917229CCEA6F001AAEB1 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0917129CCEA6F001AAEB1 /* Gradient.swift */; };
+		13C0917429CDC4C8001AAEB1 /* PollVewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0917329CDC4C8001AAEB1 /* PollVewModelTests.swift */; };
 		13CD848F29CB3F1900D16A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD848E29CB3F1900D16A9A /* AppDelegate.swift */; };
 		13CD849129CB3F1900D16A9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD849029CB3F1900D16A9A /* SceneDelegate.swift */; };
 		13CD849329CB3F1900D16A9A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD849229CB3F1900D16A9A /* ChatViewController.swift */; };
 		13CD849629CB3F1900D16A9A /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849429CB3F1900D16A9A /* Chat.storyboard */; };
 		13CD849829CB3F1A00D16A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849729CB3F1A00D16A9A /* Assets.xcassets */; };
 		13CD849B29CB3F1A00D16A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CD849929CB3F1A00D16A9A /* LaunchScreen.storyboard */; };
-		13CD84A629CB3F1A00D16A9A /* LowkeyPollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84A529CB3F1A00D16A9A /* LowkeyPollTests.swift */; };
+		13CD84A629CB3F1A00D16A9A /* ChatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84A529CB3F1A00D16A9A /* ChatViewModelTests.swift */; };
 		13CD84B029CB3F1A00D16A9A /* LowkeyPollUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84AF29CB3F1A00D16A9A /* LowkeyPollUITests.swift */; };
 		13CD84B229CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84B129CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift */; };
 		13CD84C229CB3FDB00D16A9A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CD84C129CB3FDB00D16A9A /* Message.swift */; };
@@ -97,6 +98,7 @@
 		139DCF2729CC59D6000BD911 /* PollOptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollOptionTableViewCell.xib; sourceTree = "<group>"; };
 		139DCF2C29CC59FC000BD911 /* PollSwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PollSwitchTableViewCell.xib; sourceTree = "<group>"; };
 		13C0917129CCEA6F001AAEB1 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		13C0917329CDC4C8001AAEB1 /* PollVewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollVewModelTests.swift; sourceTree = "<group>"; };
 		13CD848B29CB3F1900D16A9A /* LowkeyPoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LowkeyPoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD848E29CB3F1900D16A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CD849029CB3F1900D16A9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 		13CD849A29CB3F1A00D16A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CD849C29CB3F1A00D16A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CD84A129CB3F1A00D16A9A /* LowkeyPollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LowkeyPollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13CD84A529CB3F1A00D16A9A /* LowkeyPollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowkeyPollTests.swift; sourceTree = "<group>"; };
+		13CD84A529CB3F1A00D16A9A /* ChatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModelTests.swift; sourceTree = "<group>"; };
 		13CD84AB29CB3F1A00D16A9A /* LowkeyPollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LowkeyPollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CD84AF29CB3F1A00D16A9A /* LowkeyPollUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowkeyPollUITests.swift; sourceTree = "<group>"; };
 		13CD84B129CB3F1A00D16A9A /* LowkeyPollUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowkeyPollUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -304,7 +306,8 @@
 		13CD84A429CB3F1A00D16A9A /* LowkeyPollTests */ = {
 			isa = PBXGroup;
 			children = (
-				13CD84A529CB3F1A00D16A9A /* LowkeyPollTests.swift */,
+				13CD84A529CB3F1A00D16A9A /* ChatViewModelTests.swift */,
+				13C0917329CDC4C8001AAEB1 /* PollVewModelTests.swift */,
 			);
 			path = LowkeyPollTests;
 			sourceTree = "<group>";
@@ -596,7 +599,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CD84A629CB3F1A00D16A9A /* LowkeyPollTests.swift in Sources */,
+				13CD84A629CB3F1A00D16A9A /* ChatViewModelTests.swift in Sources */,
+				13C0917429CDC4C8001AAEB1 /* PollVewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Option {
+struct Option: Equatable {
     let index: Int
     var text: String
     

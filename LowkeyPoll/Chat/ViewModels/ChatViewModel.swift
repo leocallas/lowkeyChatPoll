@@ -8,6 +8,8 @@
 import Foundation
 
 protocol ChatViewModelProtocol {
+    var messages: [any MessageContent] { get }
+
     func loadMessages()
     func sendTextMessage(_ message: String)
     func sendPoll(_ poll: ChatPoll)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct User {
+struct User: Equatable {
     let fullName: String
     let avatar: UIImage?
     
